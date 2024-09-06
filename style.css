@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/fonts/TTLakes-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/fonts/TTLakes-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/fonts/TTLakes-Medium.ttf");
+  font-weight: 500;
+}
+
+.main-container {
+}
+
+.header {
+}
+
+.header__burger {
+}
+
+.button {
+}
+
+.menu {
+}
+
+.header__menu {
+}
+
+.logo {
+}
+
+.header__logo {
+}
+
+.header__call {
+}
+
+.header__chat {
+}
+
+.header__profile {
+}
+
+.header__repair {
+}
+
+.header__check-status {
+}
+
+.main {
+}
+
+.main__title {
+}
+
+.main__slide-menu {
+}
+
+.slide-menu {
+}
+
+.slide-menu__item {
+}
+
+.slide-menu__link {
+}
+
+.slide-menu__link--active {
+}
+
+.main__description {
+}
+
+.main__read-more {
+}
+
+.main__photo {
+}
+
+.footer {
+}
