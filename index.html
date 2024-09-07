@@ -29,7 +29,7 @@
             alt=""
           />
         </button>
-        <nav class="menu header__menu"></nav>
+        <nav class="menu header__menu hidden"></nav>
         <div class="logo header__logo">
           <img
             src="/img/logo.svg"
@@ -37,37 +37,41 @@
           />
         </div>
 
-        <button class="header__call button hidden">
+        <button class="header__call button">
           <img
-            src=""
+            src="/img/call.svg"
             alt=""
           />
         </button>
-        <button class="header__chat button hidden">
+        <button class="header__chat button">
           <img
-            src=""
+            src="/img/chat.svg"
             alt=""
           />
         </button>
-        <button class="header__profile button hidden">
+        <button class="header__profile button">
           <img
-            src=""
+            src="/img/profile.svg"
             alt=""
           />
         </button>
-
-        <button class="header__repair button">
+        <label for="header__repair" class="header__text">Оставить заявку
+        <button class="header__repair button" id="header__repair">
           <img
             src="/img/repair.svg"
             alt=""
           />
+          
         </button>
-        <button class="header__check-status button">
+      </label>
+        <label for="header__check-status" class="header__text">Статус ремонта
+        <button class="header__check-status button" id="header__check-status">
           <img
             src="/img/check-status.svg"
             alt=""
           />
         </button>
+      </label>
       </header>
       <main class="main">
         <h1 class="main__title">Услуги и сервисы</h1>
@@ -115,21 +119,25 @@
             >
           </li>
         </ul>
-        <div class="main__description">
+        <div class="main__description description">
+        <div>
+          <div class="description__text">
           Мы являемся авторизованным сервисным центром по ремонту техники Dell.
           Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-          гарантией производителя. <br />
+          гарантией производителя. <br /> <br />
           Мы успешно работаем с 1992 года и заслужили репутацию надежного
           партнера, что подтверждает большое количество постоянных клиентов. Мы
           гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
           советуют нас родным и близким.
         </div>
-        <button class="main__read-more">Читать далее</button>
+        <button class="main__read-more"> <img style="height: 12px; width: 12px;" src="/img/arrows.svg" alt="">Читать далее</button>
+        </div>
         <img
           src="/img/main__photo.jpg"
           alt=""
           class="main__photo"
-        />
+        /></div>
+
       </main>
       <footer class="footer"></footer>
     </div>
