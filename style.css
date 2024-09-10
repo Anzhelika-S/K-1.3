@@ -276,6 +276,7 @@ body {
 
   .main__title {
     padding-left: 24px;
+    width: 50%;
   }
 
   .main__slide-menu {
