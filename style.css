@@ -136,17 +136,9 @@ body {
   list-style: none;
   margin-block: 0;
   padding-inline: 0;
-}
 
-.main__slide-menu::after {
-  content: "";
-  width: 24px;
-  height: 40px;
-  top: 0;
-  right: 0px;
-  position: absolute;
-  background: linear-gradient(
-    to right,
+  mask-image: linear-gradient(
+    to left,
     rgba(255, 255, 255, 0) 0%,
     rgba(248, 248, 248, 1) 40%
   );
