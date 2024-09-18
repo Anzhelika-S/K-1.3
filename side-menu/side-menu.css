@@ -177,6 +177,8 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  font-style: normal;
 }
 
 .footer__mail {
