@@ -106,7 +106,7 @@ html {
   margin-left: auto;
 }
 
-.nav {
+.side-menu__nav {
   display: flex;
   flex-direction: column;
   gap: 25px;
