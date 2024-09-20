@@ -1,0 +1,148 @@
+@import url("../node_modules/swiper/swiper-bundle.css");
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url(../fonts/TTLakes-Medium.ttf);
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  font-family: "TT Lakes";
+  font-size: 16px;
+}
+
+.services__title {
+  margin: 0;
+  padding: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7e7e82;
+
+  position: relative;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+
+.services__title::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #d9fff5;
+  top: 0;
+  left: 0;
+}
+
+/*swiper styles*/
+
+.swiper {
+  width: 320px;
+  height: auto;
+
+  background-color: #f8f8f8;
+  overflow: hidden;
+  padding: 16px;
+
+  mask-image: linear-gradient(to left, transparent 0%, #f8f8f8 20%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.swiper__wrapper {
+  display: flex;
+  column-gap: 16px;
+}
+
+.swiper__list-item {
+  flex: 0 0 240px;
+  max-height: 72px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  padding: 20px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.swiper__slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.swiper__button {
+  display: inline-block;
+  border: 2px solid #ff3e79;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.swiper__button::before {
+  content: "";
+  position: absolute;
+  border-right: 2px solid #ff3e79;
+  border-top: 2px solid #ff3e79;
+  height: 8px;
+  width: 8px;
+  top: 40%;
+  left: 35%;
+  transform: rotate(45deg);
+}
+
+.swiper__pagination {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
