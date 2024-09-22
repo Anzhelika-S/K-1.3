@@ -22,7 +22,7 @@ function swiperMode() {
 
         grabCursor: true,
 
-        slidesPerView: 1.2,
+        slidesPerView: "auto",
         spaceBetween: 16,
 
         centeredSlides: true,
