@@ -207,6 +207,12 @@ html {
     cursor: pointer;
   }
 
+  .services__button:active,
+  .services__button:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+
   .button__arrows {
     transition: all 0.3s ease-in-out;
   }

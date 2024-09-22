@@ -30,7 +30,7 @@ function swiperMode() {
         slidesOffsetBefore: false,
       });
     }
-  } else {
+  } else if (!mobile.matches && init) {
     swiper.destroy();
     init = false;
   }
