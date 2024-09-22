@@ -73,6 +73,10 @@ html {
 
 /*swiper styles*/
 
+.swiper-wrapper {
+  height: fit-content;
+}
+
 .services__swiper {
   width: 320px;
   height: auto;

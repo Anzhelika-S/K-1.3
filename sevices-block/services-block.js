@@ -1,5 +1,5 @@
 const mobile = window.matchMedia("(max-width:320px)");
-const desktop = window.matchMedia("(min-width:1220px)");
+const desktop = window.matchMedia("(min-width:1120px)");
 
 const showMoreButton = document.querySelector(".button");
 const showMore = document.querySelector(".button__text--show");
@@ -22,11 +22,12 @@ function swiperMode() {
 
         grabCursor: true,
 
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         spaceBetween: 16,
 
         centeredSlides: true,
         centeredSlidesBounds: true,
+        slidesOffsetBefore: false,
       });
     }
   } else {
