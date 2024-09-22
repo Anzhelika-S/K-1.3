@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "TT Lakes"; 
+  font-family: "TT Lakes";
   src: url(../fonts/TTLakes-Bold.ttf);
   font-weight: 700;
 }
@@ -16,6 +16,8 @@
 
 body {
   margin: 0;
+
+  background-color: #f8f8f8;
 }
 
 html {
@@ -33,10 +35,6 @@ html {
   padding: 0;
   text-decoration: none;
   list-style: none;
-}
-
-.hidden {
-  display: none;
 }
 
 .services {
@@ -69,6 +67,10 @@ html {
   left: 0;
 }
 
+.services__button {
+  display: none;
+}
+
 /*swiper styles*/
 
 .services__swiper {
@@ -85,10 +87,6 @@ html {
   gap: 16px;
 }
 
-.swiper-wrapper {
-  column-gap: 16px;
-}
-
 .swiper__list-item {
   flex: 0 0 240px;
   max-height: 72px;
@@ -102,9 +100,15 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 14px 16px;
 
+  cursor: pointer;
+}
+
+.swiper__img {
+  max-height: 40px;
+  object-fit: none;
 }
 
 .swiper__button {
@@ -140,7 +144,92 @@ html {
   cursor: pointer;
 }
 
-.swiper-pagination-bullet-active {
-  background: #000000;
-  opacity: 0.6;
+.swiper-pagination-bullet {
+  background: #7e7e82;
+}
+
+@media (min-width: 321px) {
+  .services__swiper {
+    width: 100%;
+    mask-image: none;
+    padding: 24px;
+
+    transition: all 0.3s ease-in-out;
+
+    height: 200px;
+  }
+
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 224px);
+    row-gap: 16px;
+    column-gap: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .services__title {
+    padding: 16px 24px;
+  }
+
+  .services__swiper {
+    overflow: hidden;
+  }
+
+  .services__button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: none;
+    border: none;
+    width: fit-content;
+
+    font-family: "TT Lakes";
+    font-size: 16px;
+    color: #1b1c21;
+    font-weight: 500;
+
+    margin-left: 24px;
+    padding: 10px;
+
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .button__arrows {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .services {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .services__title {
+    padding: 16px 32px;
+  }
+
+  .services__swiper {
+    padding: 24px 32px;
+  }
+
+  .swiper-wrapper {
+    row-gap: 16px;
+    column-gap: 32px;
+
+    grid-template-columns: repeat(auto-fit, 240px);
+  }
 }
