@@ -128,9 +128,7 @@ body {
 }
 
 .main__slide-menu {
-  padding-left: 16px;
-
-  height: 40px;
+  height: 44px;
   position: relative;
 
   list-style: none;
@@ -146,10 +144,12 @@ body {
 
 .slide-menu {
   display: flex;
+  align-items: center;
   overflow: scroll;
   column-gap: 20px;
 
   scrollbar-width: none;
+  padding-left: 16px;
 }
 
 .slide-menu__link {
@@ -160,7 +160,7 @@ body {
   white-space: nowrap;
   padding: 8px 10px;
   height: 40px;
-  border: 0px transparent;
+  border: 2px transparent;
 
   text-decoration: none;
   color: #1b1c21;
@@ -168,11 +168,10 @@ body {
 
 .slide-menu__link:hover {
   background-color: #ffffff;
-  border: 2px solid #b8ffec;
+  box-shadow: 0 0 2px 2px #b8ffec;
   border-radius: 6px;
-  padding: 6px 8px;
 
-  transition: ease-in-out 0.1s;
+  transition: box-shadow 0.3s ease;
 }
 
 .main__description {

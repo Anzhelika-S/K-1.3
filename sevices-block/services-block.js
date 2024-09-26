@@ -1,9 +1,9 @@
-const mobile = window.matchMedia("(max-width:320px)");
+const mobile = window.matchMedia("(min-width:320px) and (max-width: 767px)");
+const tablet = window.matchMedia("(min-width:768px)");
 const desktop = window.matchMedia("(min-width:1120px)");
 
 const showMoreButton = document.querySelector(".button");
-const showMore = document.querySelector(".button__text--show");
-const hide = document.querySelector(".button__text--hide");
+const showMore = document.querySelector(".button__text--show-more");
 const buttonArrows = document.querySelector(".button__arrows");
 const servicesSwiper = document.querySelector(".services__swiper");
 
@@ -30,7 +30,7 @@ function swiperMode() {
         slidesOffsetBefore: false,
       });
     }
-  } else if (!mobile.matches && init) {
+  } else if (tablet.matches && init) {
     swiper.destroy();
     init = false;
   }
