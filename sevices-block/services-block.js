@@ -1,3 +1,4 @@
+const desktop = window.matchMedia("(min-width:1120px)");
 const showMoreButton = document.querySelector(".button");
 const showMore = document.querySelector(".button__text--show-more");
 const buttonArrows = document.querySelector(".button__arrows");
