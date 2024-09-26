@@ -71,126 +71,9 @@ html {
   display: none;
 }
 
-/*swiper styles*/
-
-.swiper-wrapper {
-  height: fit-content;
-}
-
-.services__swiper {
-  width: 100vw;
-  height: auto;
-
-  background-color: #f8f8f8;
-  padding: 16px;
-
-  mask-image: linear-gradient(to left, transparent 0%, #f8f8f8 20%);
-
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.swiper__list-item {
-  flex: 0 0 240px;
-  max-height: 72px;
-  border: 1px solid #eaeaea;
-  border-radius: 6px;
-
-  background-color: #ffffff;
-}
-
-.swiper__list-item:hover,
-.swiper__list-item:focus {
-  box-shadow: 0 0 2px 2px #b8ffec;
-  transition: box-shadow 0.3s ease;
-}
-
-.swiper__slide {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 14px 16px;
-
-  cursor: pointer;
-}
-
-.swiper__img {
-  max-height: 40px;
-  object-fit: none;
-}
-
-.swiper__button {
-  display: inline-block;
-  border: 2px solid #ff3e79;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-
-  position: relative;
-}
-
-.swiper__button::before {
-  content: "";
-  position: absolute;
-  border-right: 2px solid #ff3e79;
-  border-top: 2px solid #ff3e79;
-  height: 8px;
-  width: 8px;
-  top: 40%;
-  left: 35%;
-  transform: rotate(45deg);
-}
-
-.swiper-pagination {
-  position: static;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-
-  cursor: pointer;
-}
-
-.swiper-pagination-bullet {
-  background: #7e7e82;
-}
-/* 
-@media (min-width: 321px) {
-  
-} */
-
 @media (min-width: 768px) {
   .services__title {
     padding: 16px 24px;
-  }
-
-  .swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 224px);
-    row-gap: 16px;
-    column-gap: 24px;
-    transition: all 0.3s ease-in-out;
-
-    transform: none;
-  }
-
-  .services__swiper {
-    overflow: hidden;
-
-    width: 100%;
-    mask-image: none;
-    padding: 24px;
-
-    transition: all 0.3s ease-in-out;
-
-    height: 200px;
-  }
-
-  .swiper-pagination {
-    display: none;
   }
 
   .services__button {
@@ -224,10 +107,6 @@ html {
   .button__arrows {
     transition: all 0.3s ease-in-out;
   }
-
-  .hidden {
-    display: none;
-  }
 }
 
 @media (min-width: 1120px) {
@@ -238,16 +117,5 @@ html {
 
   .services__title {
     padding: 16px 32px;
-  }
-
-  .services__swiper {
-    padding: 24px 32px;
-  }
-
-  .swiper-wrapper {
-    row-gap: 16px;
-    column-gap: 32px;
-
-    grid-template-columns: repeat(auto-fit, 240px);
   }
 }
